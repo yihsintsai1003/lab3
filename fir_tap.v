@@ -111,7 +111,7 @@ always@(posedge axis_clk or negedge axis_rst_n) begin
 		checkfinish <= 0;
 	end	
 	else 
-		case(curr_state)
+	case(curr_state)
 		s0: begin
             we <= 0; 
             checkfinish <= 0; 

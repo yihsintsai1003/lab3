@@ -36,8 +36,8 @@ reg outputvalid;
 reg outputlast;
 
 always@(posedge axis_clk)
-	if ( (!axis_rst_n) || rst) outputdata <= 0;
-
+	if ( (!axis_rst_n) || rst) 
+    outputdata <= 0;
 	else begin
         if(sm_tready && valid) 
             outputdata <= tap*data + outputdata;    
