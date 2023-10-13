@@ -115,34 +115,34 @@ always@(posedge axis_clk or negedge axis_rst_n) begin
 		s0: begin
             we <= 0; 
             checkfinish <= 0; 
-		end
+		end 
 		s1: begin
             we <= 0; 
             checkfinish <= 0; 
-		end
+		end 
 		s2: begin
             we <= 4'b1111;
             checkfinish <= 0;
-		end
+		end 
 		s3: begin
             we <= 0;
             checkfinish <= 1;		 
-		end
+		end 
         s4: begin
             we <= 0;
             checkfinish <= 1;
             mem[0] <= 32'h0;		 
-		end
+		end 
         s5: begin
             mem[0] <= 32'h2;		 
 		end	
         s6: begin
             mem[0] <= 32'h4;		 
-		end
+		end 
         default: begin
             we <= 0; 
             checkfinish <= 0; 
-		end			
+		end	  		
 		endcase
 end
 
