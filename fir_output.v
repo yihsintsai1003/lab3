@@ -41,7 +41,8 @@ always@(posedge axis_clk)
 	else begin
         if(sm_tready && valid) 
             outputdata <= tap*data + outputdata;    
-        else outputdata <= outputdata;
+        else 
+            outputdata <= outputdata;
     end
 
 always@(posedge axis_clk)
@@ -49,12 +50,12 @@ always@(posedge axis_clk)
         if(last) begin
             outputvalid <= 1;
             outputlast <= 1;
-            end
-            else begin
+        end
+        else begin
             outputvalid <= 1;
             outputlast <= 0;
-            end
         end
+    end
     else begin
         outputvalid <= 0;
         outputlast <= 0;
