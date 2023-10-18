@@ -8,8 +8,7 @@ module fir_data
     output  wire                     data_EN,
     output  wire [(pDATA_WIDTH-1):0] data_Di,
     output  wire [(pADDR_WIDTH-1):0] data_A,
-	input   wire [(pDATA_WIDTH-1):0] data_Do, 
-	input	wire					 finish,
+	input	wire					 tap_finish,
 	output  wire					 valid,
 	output  wire					 rst,
 	output  wire					 tail,
@@ -19,6 +18,7 @@ module fir_data
     input   wire [(pDATA_WIDTH-1):0] ss_tdata, 
     input   wire                     ss_tlast, 
     output  wire                     ss_tready,  
+	
     input   wire                     axis_clk,
     input   wire                     axis_rst_n
 );
@@ -51,21 +51,22 @@ reg tready;
 reg [4:0] curr_state;
 reg [4:0] next_state;
 
-parameter s0   = 5'b0000; // load
+parameter s0   = 5'b00000; // write mem[9] 
+parameter s1   = 5'b00001; // write mem[8] 
+parameter s2   = 5'b00010; // write mem[7]
+parameter s3   = 5'b00011; // write mem[6]
+parameter s4   = 5'b00100; // write mem[5]
+parameter s5   = 5'b00101; // write mem[4]
+parameter s6   = 5'b00110; // write mem[3]
+parameter s7   = 5'b00111; // write mem[2]
+parameter s8   = 5'b01000; // write mem[1]
+parameter s9   = 5'b01001; // write mem[0]
 
-parameter s1   = 5'b00001; // write sram mem[0]
-parameter s2   = 5'b00010; // write sram mem[1]
-parameter s3   = 5'b00011; // write sram mem[2]
-parameter s4   = 5'b00100; // write sram mem[3]
-parameter s5   = 5'b00101; // write sram mem[4]
-parameter s6   = 5'b00110; // write sram mem[5]
-parameter s7   = 5'b00111; // write sram mem[6]
-parameter s8   = 5'b01000; // write sram mem[7]
-parameter s9   = 5'b01001; // write sram mem[8]
-parameter s10  = 5'b01010; // write sram mem[9]
-parameter s11  = 5'b01011; // write sram mem[10]
+parameter s10  = 5'b01010; // shift mem
 
-parameter s12  = 5'b01100; // wait
+parameter s11  = 5'b01011; // load data to mem[0]
+parameter s12  = 5'b01100; // write mem[0] 
+
 parameter s13  = 5'b01101; // wait
 
 parameter s14  = 5'b01110; // read sram mem[0]
@@ -79,16 +80,17 @@ parameter s21  = 5'b10101; // read sram mem[7]
 parameter s22  = 5'b10110; // read sram mem[8]
 parameter s23  = 5'b10111; // read sram mem[9]
 parameter s24  = 5'b11000; // read sram mem[10]
+parameter s25  = 5'b11001; // wait 
 
-parameter s25  = 5'b11001; // shift 
-parameter s26  = 5'b11010; // last load 
+parameter s26  = 5'b11010; // last load
+
 always@(posedge axis_clk or negedge axis_rst_n)
 	if (!axis_rst_n) curr_state <= s0;
 	else        curr_state <= next_state;
 
 always@(*)
 	case(curr_state)
-		s0:  if(finish) next_state = s1;
+		s0:  if(tap_finish) next_state = s1;
 		     else next_state = s0;
 		s1:  if(ss_tvalid) next_state = s2;
 		     else next_state = s1;
@@ -112,35 +114,35 @@ always@(*)
 		     else next_state = s10;
 		s11: if(ss_tvalid) next_state = s12;
 		     else next_state = s11;
-		s12: if(finish) next_state = s13;
+		s12: if(tap_finish) next_state = s13;
 		     else next_state = s12;
-		s13: if(finish) next_state = s14;
+		s13: if(tap_finish) next_state = s14;
 		     else next_state = s13;
-		s14: if(finish) next_state = s15;
+		s14: if(tap_finish) next_state = s15;
 		     else next_state = s14;
-		s15: if(finish) next_state = s16;
+		s15: if(tap_finish) next_state = s16;
 		     else next_state = s15;
-		s16: if(finish) next_state = s17;
+		s16: if(tap_finish) next_state = s17;
 		     else next_state = s16;
-		s17: if(finish) next_state = s18;
+		s17: if(tap_finish) next_state = s18;
 		     else next_state = s17;
-		s18: if(finish) next_state = s19;
+		s18: if(tap_finish) next_state = s19;
 		     else next_state = s18;
-		s19: if(finish) next_state = s20;
+		s19: if(tap_finish) next_state = s20;
 		     else next_state = s19;
-		s20: if(finish) next_state = s21;
+		s20: if(tap_finish) next_state = s21;
 		     else next_state = s20;
-		s21: if(finish) next_state = s22;
+		s21: if(tap_finish) next_state = s22;
 		     else next_state = s21;
-		s22: if(finish) next_state = s23;
+		s22: if(tap_finish) next_state = s23;
 		     else next_state = s22;
-		s23: if(finish) next_state = s24;
+		s23: if(tap_finish) next_state = s24;
 		     else next_state = s23;
-		s24: if(finish) next_state = s25;
+		s24: if(tap_finish) next_state = s25;
 		     else next_state = s24;
-		s25: if(finish) next_state = s0;
+		s25: if(tap_finish) next_state = s0;
 		     else next_state = s25;
-		s26: if(finish) next_state = s12;
+		s26: if(tap_finish) next_state = s12;
 		     else next_state = s26;	 
 		default : next_state = s0;		 			 			 			 			 			 			 			 			 			 				 			 
 	endcase

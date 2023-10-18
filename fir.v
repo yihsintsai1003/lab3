@@ -44,7 +44,7 @@ module fir
     input   wire                     axis_clk,
     input   wire                     axis_rst_n
 );
-    wire                     finish;
+    wire                     tap_finish;
     wire                     valid;
     wire                     rst;
     wire                     tail;      
@@ -55,8 +55,7 @@ module fir
         .data_EN(data_EN),
         .data_Di(data_Di),
         .data_A(data_A),
-        .data_Do(data_Do),
-        .finish(finish),
+        .tap_finish(tap_finish),
         .valid(valid),
         .rst(rst),
         .tail(tail),
@@ -74,9 +73,9 @@ wire [(pADDR_WIDTH-1):0] tapaddr;
 wire tapen;
 wire [3:0] tapwe;
 
-assign tap_A = (!finish)?tapaddr:data_A;
-assign tap_EN = (!finish)?tapen:data_EN;
-assign tap_WE = (!finish)?tapwe:0;
+assign tap_A = (!tap_finish)?tapaddr:data_A;
+assign tap_EN = (!tap_finish)?tapen:data_EN;
+assign tap_WE = (!tap_finish)?tapwe:0;
 
     fir_tap t1(
         .awready(awready),
@@ -95,20 +94,19 @@ assign tap_WE = (!finish)?tapwe:0;
         .axis_rst_n(axis_rst_n),
 
         // ram for tap
-        .tap_WE(tapwe),
-        .tap_EN(tapen),
+        .tapwe(tapwe),
+        .tapen(tapen),
         .tap_Di(tap_Di),
-        .tap_A(tapaddr),
-        .tap_Do(tap_Do),
-        .tap_finish(finish),
+        .tapaddr(tapaddr),
+        .tap_finish(tap_finish),
 
-        .output_finish(sm_tlast)
+        .sm_tlast(sm_tlast)
 
 );
 
     fir_output o1(
-        .tap(tap_Do),
-        .data(data_Do),
+        .tap_Do(tap_Do),
+        .data_Do(data_Do),
         .valid(valid),
         .rst(rst),
         .tail(tail),

@@ -6,8 +6,8 @@ module fir_output
 (
     input   wire                     axis_clk,
     input   wire                     axis_rst_n,
-    input   wire [(pDATA_WIDTH-1):0] tap,
-    input   wire [(pDATA_WIDTH-1):0] data,
+    input   wire [(pDATA_WIDTH-1):0] tap_Do,
+    input   wire [(pDATA_WIDTH-1):0] data_Do,
 	input   wire					 valid,
 	input   wire					 rst,
     input   wire					 tail,
@@ -36,13 +36,12 @@ reg outputvalid;
 reg outputlast;
 
 always@(posedge axis_clk)
-	if ( (!axis_rst_n) || rst) 
-        outputdata <= 0;
+	if ( (!axis_rst_n) || rst) outputdata <= 0;
+
 	else begin
         if(sm_tready && valid) 
-            outputdata <= tap*data + outputdata;    
-        else 
-            outputdata <= outputdata;
+            outputdata <= tap_Do*data_Do + outputdata;    
+        else outputdata <= outputdata;
     end
 
 always@(posedge axis_clk)
@@ -50,12 +49,12 @@ always@(posedge axis_clk)
         if(last) begin
             outputvalid <= 1;
             outputlast <= 1;
-        end
-        else begin
+            end
+            else begin
             outputvalid <= 1;
             outputlast <= 0;
+            end
         end
-    end
     else begin
         outputvalid <= 0;
         outputlast <= 0;
