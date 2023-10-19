@@ -78,7 +78,7 @@ reg [2:0] next_state;
 parameter s0   = 3'b000; // wait
 parameter s1   = 3'b001; // write
 parameter s2   = 3'b010; // read
-parameter s3   = 3'b011; // ap_start = 1
+parameter s3   = 3'b011; // finish
 parameter s4   = 3'b100; // ap_start = 0
 parameter s5   = 3'b101; // ap_done
 parameter s6   = 3'b110; // ap_idle
