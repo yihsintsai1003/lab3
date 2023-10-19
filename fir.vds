@@ -1,0 +1,458 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Oct 17 12:11:29 2023
+# Process ID: 2658
+# Current directory: /home/ubuntu/lab3_vivado/lab3_vivado.runs/synth_1
+# Command line: vivado -log fir.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fir.tcl
+# Log file: /home/ubuntu/lab3_vivado/lab3_vivado.runs/synth_1/fir.vds
+# Journal file: /home/ubuntu/lab3_vivado/lab3_vivado.runs/synth_1/vivado.jou
+# Running On: ubuntu2004, OS: Linux, CPU Frequency: 2807.996 MHz, CPU Physical cores: 2, Host memory: 18799 MB
+#-----------------------------------------------------------
+source fir.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/ubuntu/lab3_vivado/lab3_vivado.srcs/utils_1/imports/synth_1/fir.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/ubuntu/lab3_vivado/lab3_vivado.srcs/utils_1/imports/synth_1/fir.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top fir -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2692
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_data' with formal parameter declaration list [/home/ubuntu/lab3/fir_data.v:54]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_data' with formal parameter declaration list [/home/ubuntu/lab3/fir_data.v:56]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_data' with formal parameter declaration list [/home/ubuntu/lab3/fir_data.v:57]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_data' with formal parameter declaration list [/home/ubuntu/lab3/fir_data.v:58]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_data' with formal parameter declaration list [/home/ubuntu/lab3/fir_data.v:59]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_data' with formal parameter declaration list [/home/ubuntu/lab3/fir_data.v:60]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_data' with formal parameter declaration list [/home/ubuntu/lab3/fir_data.v:61]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_data' with formal parameter declaration list [/home/ubuntu/lab3/fir_data.v:62]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_data' with formal parameter declaration list [/home/ubuntu/lab3/fir_data.v:63]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_data' with formal parameter declaration list [/home/ubuntu/lab3/fir_data.v:64]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_data' with formal parameter declaration list [/home/ubuntu/lab3/fir_data.v:65]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_data' with formal parameter declaration list [/home/ubuntu/lab3/fir_data.v:66]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_data' with formal parameter declaration list [/home/ubuntu/lab3/fir_data.v:68]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_data' with formal parameter declaration list [/home/ubuntu/lab3/fir_data.v:69]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_data' with formal parameter declaration list [/home/ubuntu/lab3/fir_data.v:71]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_data' with formal parameter declaration list [/home/ubuntu/lab3/fir_data.v:72]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_data' with formal parameter declaration list [/home/ubuntu/lab3/fir_data.v:73]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_data' with formal parameter declaration list [/home/ubuntu/lab3/fir_data.v:74]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_data' with formal parameter declaration list [/home/ubuntu/lab3/fir_data.v:75]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_data' with formal parameter declaration list [/home/ubuntu/lab3/fir_data.v:76]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_data' with formal parameter declaration list [/home/ubuntu/lab3/fir_data.v:77]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_data' with formal parameter declaration list [/home/ubuntu/lab3/fir_data.v:78]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_data' with formal parameter declaration list [/home/ubuntu/lab3/fir_data.v:79]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_data' with formal parameter declaration list [/home/ubuntu/lab3/fir_data.v:80]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_data' with formal parameter declaration list [/home/ubuntu/lab3/fir_data.v:81]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_data' with formal parameter declaration list [/home/ubuntu/lab3/fir_data.v:83]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_data' with formal parameter declaration list [/home/ubuntu/lab3/fir_data.v:84]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_tap' with formal parameter declaration list [/home/ubuntu/lab3/fir_tap.v:78]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_tap' with formal parameter declaration list [/home/ubuntu/lab3/fir_tap.v:79]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_tap' with formal parameter declaration list [/home/ubuntu/lab3/fir_tap.v:80]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_tap' with formal parameter declaration list [/home/ubuntu/lab3/fir_tap.v:81]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_tap' with formal parameter declaration list [/home/ubuntu/lab3/fir_tap.v:82]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_tap' with formal parameter declaration list [/home/ubuntu/lab3/fir_tap.v:83]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir_tap' with formal parameter declaration list [/home/ubuntu/lab3/fir_tap.v:84]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2928.078 ; gain = 0.000 ; free physical = 11617 ; free virtual = 14683
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fir' [/home/ubuntu/lab3/fir.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fir_data' [/home/ubuntu/lab3/fir_data.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fir_data' (0#1) [/home/ubuntu/lab3/fir_data.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fir_tap' [/home/ubuntu/lab3/fir_tap.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fir_tap' (0#1) [/home/ubuntu/lab3/fir_tap.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fir_output' [/home/ubuntu/lab3/fir_output.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fir_output' (0#1) [/home/ubuntu/lab3/fir_output.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fir' (0#1) [/home/ubuntu/lab3/fir.v:1]
+WARNING: [Synth 8-7137] Register datalast_reg in module fir_data has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/ubuntu/lab3/fir_data.v:195]
+WARNING: [Synth 8-6014] Unused sequential element we_reg was removed.  [/home/ubuntu/lab3/fir_tap.v:107]
+WARNING: [Synth 8-7129] Port araddr[11] in module fir_tap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[10] in module fir_tap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[9] in module fir_tap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[8] in module fir_tap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[7] in module fir_tap is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2928.078 ; gain = 0.000 ; free physical = 12662 ; free virtual = 15736
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2928.078 ; gain = 0.000 ; free physical = 12665 ; free virtual = 15739
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2928.078 ; gain = 0.000 ; free physical = 12665 ; free virtual = 15739
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2928.078 ; gain = 0.000 ; free physical = 12664 ; free virtual = 15739
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ubuntu/lab3/fir.xdc]
+Finished Parsing XDC File [/home/ubuntu/lab3/fir.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2944.086 ; gain = 0.000 ; free physical = 12588 ; free virtual = 15677
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2944.086 ; gain = 0.000 ; free physical = 12588 ; free virtual = 15677
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 2944.086 ; gain = 16.008 ; free physical = 12638 ; free virtual = 15727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 2944.086 ; gain = 16.008 ; free physical = 12638 ; free virtual = 15727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 2944.086 ; gain = 16.008 ; free physical = 12638 ; free virtual = 15727
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'fir_data'
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'fir_tap'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |      000000000000000000000000001 |                            00000
+                      s1 |      000000000000000000000000010 |                            00001
+                      s2 |      000000000000000000000000100 |                            00010
+                      s3 |      000000000000000000000001000 |                            00011
+                      s4 |      000000000000000000000010000 |                            00100
+                      s5 |      000000000000000000000100000 |                            00101
+                      s6 |      000000000000000000001000000 |                            00110
+                      s7 |      000000000000000000010000000 |                            00111
+                      s8 |      000000000000000000100000000 |                            01000
+                      s9 |      000000000000000001000000000 |                            01001
+                     s10 |      000000000000000010000000000 |                            01010
+                     s26 |      000000000000000100000000000 |                            11010
+                     s11 |      000000000000001000000000000 |                            01011
+                     s12 |      000000000000010000000000000 |                            01100
+                     s13 |      000000000000100000000000000 |                            01101
+                     s14 |      000000000001000000000000000 |                            01110
+                     s15 |      000000000010000000000000000 |                            01111
+                     s16 |      000000000100000000000000000 |                            10000
+                     s17 |      000000001000000000000000000 |                            10001
+                     s18 |      000000010000000000000000000 |                            10010
+                     s19 |      000000100000000000000000000 |                            10011
+                     s20 |      000001000000000000000000000 |                            10100
+                     s21 |      000010000000000000000000000 |                            10101
+                     s22 |      000100000000000000000000000 |                            10110
+                     s23 |      001000000000000000000000000 |                            10111
+                     s24 |      010000000000000000000000000 |                            11000
+                     s25 |      100000000000000000000000000 |                            11001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'one-hot' in module 'fir_data'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                              000 |                              000
+                      s1 |                              001 |                              001
+                      s2 |                              010 |                              010
+                      s3 |                              011 |                              011
+                      s4 |                              100 |                              100
+                      s5 |                              101 |                              101
+                      s6 |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'sequential' in module 'fir_tap'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 2944.086 ; gain = 16.008 ; free physical = 12638 ; free virtual = 15730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 85    
+	               12 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Multipliers : 
+	              32x32  Multipliers := 1     
++---Muxes : 
+	  27 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 2     
+	   7 Input   32 Bit        Muxes := 1     
+	  75 Input   32 Bit        Muxes := 1     
+	  27 Input   27 Bit        Muxes := 1     
+	   2 Input   27 Bit        Muxes := 28    
+	  27 Input   12 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	  27 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 3     
+	  27 Input    1 Bit        Muxes := 8     
+	   2 Input    1 Bit        Muxes := 8     
+	   3 Input    1 Bit        Muxes := 74    
+	   7 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP o1/outputdata1, operation Mode is: A*B.
+DSP Report: operator o1/outputdata1 is absorbed into DSP o1/outputdata1.
+DSP Report: operator o1/outputdata1 is absorbed into DSP o1/outputdata1.
+DSP Report: Generating DSP o1/outputdata1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator o1/outputdata1 is absorbed into DSP o1/outputdata1.
+DSP Report: operator o1/outputdata1 is absorbed into DSP o1/outputdata1.
+DSP Report: Generating DSP o1/outputdata1, operation Mode is: A*B.
+DSP Report: operator o1/outputdata1 is absorbed into DSP o1/outputdata1.
+DSP Report: operator o1/outputdata1 is absorbed into DSP o1/outputdata1.
+DSP Report: Generating DSP o1/outputdata1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator o1/outputdata1 is absorbed into DSP o1/outputdata1.
+DSP Report: operator o1/outputdata1 is absorbed into DSP o1/outputdata1.
+WARNING: [Synth 8-7129] Port araddr[11] in module fir_tap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[10] in module fir_tap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[9] in module fir_tap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[8] in module fir_tap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[7] in module fir_tap is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 2944.086 ; gain = 16.008 ; free physical = 12590 ; free virtual = 15694
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fir         | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir         | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir         | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 2944.086 ; gain = 16.008 ; free physical = 12466 ; free virtual = 15578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:36 . Memory (MB): peak = 2944.086 ; gain = 16.008 ; free physical = 12460 ; free virtual = 15572
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 2944.086 ; gain = 16.008 ; free physical = 12435 ; free virtual = 15547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:41 . Memory (MB): peak = 2944.086 ; gain = 16.008 ; free physical = 12434 ; free virtual = 15546
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:41 . Memory (MB): peak = 2944.086 ; gain = 16.008 ; free physical = 12434 ; free virtual = 15546
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][31] with 1st driver pin 't1/mem_reg[0][31]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][31] with 2nd driver pin 't1/mem_reg[0][31]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][30] with 1st driver pin 't1/mem_reg[0][30]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][30] with 2nd driver pin 't1/mem_reg[0][30]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][29] with 1st driver pin 't1/mem_reg[0][29]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][29] with 2nd driver pin 't1/mem_reg[0][29]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][28] with 1st driver pin 't1/mem_reg[0][28]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][28] with 2nd driver pin 't1/mem_reg[0][28]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][27] with 1st driver pin 't1/mem_reg[0][27]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][27] with 2nd driver pin 't1/mem_reg[0][27]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][26] with 1st driver pin 't1/mem_reg[0][26]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][26] with 2nd driver pin 't1/mem_reg[0][26]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][25] with 1st driver pin 't1/mem_reg[0][25]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][25] with 2nd driver pin 't1/mem_reg[0][25]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][24] with 1st driver pin 't1/mem_reg[0][24]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][24] with 2nd driver pin 't1/mem_reg[0][24]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][23] with 1st driver pin 't1/mem_reg[0][23]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][23] with 2nd driver pin 't1/mem_reg[0][23]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][22] with 1st driver pin 't1/mem_reg[0][22]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][22] with 2nd driver pin 't1/mem_reg[0][22]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][21] with 1st driver pin 't1/mem_reg[0][21]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][21] with 2nd driver pin 't1/mem_reg[0][21]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][20] with 1st driver pin 't1/mem_reg[0][20]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][20] with 2nd driver pin 't1/mem_reg[0][20]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][19] with 1st driver pin 't1/mem_reg[0][19]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][19] with 2nd driver pin 't1/mem_reg[0][19]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][18] with 1st driver pin 't1/mem_reg[0][18]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][18] with 2nd driver pin 't1/mem_reg[0][18]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][17] with 1st driver pin 't1/mem_reg[0][17]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][17] with 2nd driver pin 't1/mem_reg[0][17]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][16] with 1st driver pin 't1/mem_reg[0][16]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][16] with 2nd driver pin 't1/mem_reg[0][16]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][15] with 1st driver pin 't1/mem_reg[0][15]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][15] with 2nd driver pin 't1/mem_reg[0][15]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][14] with 1st driver pin 't1/mem_reg[0][14]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][14] with 2nd driver pin 't1/mem_reg[0][14]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][13] with 1st driver pin 't1/mem_reg[0][13]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][13] with 2nd driver pin 't1/mem_reg[0][13]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][12] with 1st driver pin 't1/mem_reg[0][12]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][12] with 2nd driver pin 't1/mem_reg[0][12]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][11] with 1st driver pin 't1/mem_reg[0][11]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][11] with 2nd driver pin 't1/mem_reg[0][11]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][10] with 1st driver pin 't1/mem_reg[0][10]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][10] with 2nd driver pin 't1/mem_reg[0][10]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][9] with 1st driver pin 't1/mem_reg[0][9]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][9] with 2nd driver pin 't1/mem_reg[0][9]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][8] with 1st driver pin 't1/mem_reg[0][8]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][8] with 2nd driver pin 't1/mem_reg[0][8]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][7] with 1st driver pin 't1/mem_reg[0][7]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][7] with 2nd driver pin 't1/mem_reg[0][7]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][6] with 1st driver pin 't1/mem_reg[0][6]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][6] with 2nd driver pin 't1/mem_reg[0][6]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][5] with 1st driver pin 't1/mem_reg[0][5]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][5] with 2nd driver pin 't1/mem_reg[0][5]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][4] with 1st driver pin 't1/mem_reg[0][4]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][4] with 2nd driver pin 't1/mem_reg[0][4]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][3] with 1st driver pin 't1/mem_reg[0][3]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][3] with 2nd driver pin 't1/mem_reg[0][3]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][2] with 1st driver pin 't1/mem_reg[0][2]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][2] with 2nd driver pin 't1/mem_reg[0][2]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][1] with 1st driver pin 't1/mem_reg[0][1]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][1] with 2nd driver pin 't1/mem_reg[0][1]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][0] with 1st driver pin 't1/mem_reg[0][0]__0/Q' [/home/ubuntu/lab3/fir_tap.v:68]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin t1/mem[0][0] with 2nd driver pin 't1/mem_reg[0][0]/Q' [/home/ubuntu/lab3/fir_tap.v:131]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|       32|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 2944.086 ; gain = 16.008 ; free physical = 12434 ; free virtual = 15546
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 2944.086 ; gain = 16.008 ; free physical = 12434 ; free virtual = 15546
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 2944.086 ; gain = 16.008 ; free physical = 12434 ; free virtual = 15546
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 2944.086 ; gain = 16.008 ; free physical = 12434 ; free virtual = 15546
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fir         | A*B          | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir         | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir         | PCIN>>17+A*B | 0      | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |    12|
+|3     |DSP48E1 |     3|
+|4     |LUT1    |     1|
+|5     |LUT2    |    72|
+|6     |LUT3    |    49|
+|7     |LUT4    |    56|
+|8     |LUT5    |   107|
+|9     |LUT6    |  1590|
+|10    |MUXF7   |   589|
+|11    |MUXF8   |   256|
+|12    |FDCE    |   392|
+|13    |FDPE    |     1|
+|14    |FDRE    |  2467|
+|15    |IBUF    |   156|
+|16    |OBUF    |   169|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 2944.086 ; gain = 16.008 ; free physical = 12434 ; free virtual = 15546
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 64 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 2944.086 ; gain = 0.000 ; free physical = 12505 ; free virtual = 15618
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 2944.094 ; gain = 16.008 ; free physical = 12505 ; free virtual = 15618
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2944.094 ; gain = 0.000 ; free physical = 12502 ; free virtual = 15617
+INFO: [Netlist 29-17] Analyzing 860 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 9 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'fir' is not ideal for floorplanning, since the cellview 'fir_tap' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2944.094 ; gain = 0.000 ; free physical = 12529 ; free virtual = 15645
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: eaa11784
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 48 Warnings, 64 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:52 . Memory (MB): peak = 2944.094 ; gain = 16.016 ; free physical = 12715 ; free virtual = 15830
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/lab3_vivado/lab3_vivado.runs/synth_1/fir.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fir_utilization_synth.rpt -pb fir_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 17 12:12:37 2023...
